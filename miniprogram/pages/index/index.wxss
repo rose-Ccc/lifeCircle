@@ -1,0 +1,44 @@
+image{
+  width: 100%;
+  height: 30vh
+}
+swiper{
+  height: 30vh
+}
+swiper-item{
+  border-radius: 20rpx;
+}
+
+.all{
+  width: 95vw;
+  margin: auto;
+  margin-top: 3vw;
+}
+.line{
+  margin: auto;
+  width: 95vw;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  background-color: #82b3fc;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  width: 46vw;
+  height: 20vw;
+  justify-content: left;
+  font-size: 35rpx;
+}
+.box image{
+  width: 15vw;
+  height: 15vw;
+  margin: 3vw 20rpx;
+}
+.box view{
+  height: 20vw;
+  line-height: 20vw;
+  color: white;
+}
