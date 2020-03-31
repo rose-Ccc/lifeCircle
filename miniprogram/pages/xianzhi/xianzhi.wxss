@@ -9,6 +9,7 @@ page {
   width: 84vw;
   margin: auto;
   margin-bottom: 30rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2);
 }
 
 .top {
