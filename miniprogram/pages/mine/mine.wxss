@@ -1,3 +1,7 @@
+page {
+  background-color: #e6e3e3;
+}
+
 .info {
   background-color: #00a8f3;
   padding: 30rpx;
@@ -6,7 +10,15 @@
   align-items: center;
   margin-bottom: 30rpx;
 }
-
+.info button{
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #00a8f3
+}
+.name{
+  height: 70rpx;
+  line-height: 80rpx
+}
 .touxiang {
   margin: auto;
   overflow: hidden;
@@ -16,6 +28,10 @@
   height: 160rpx;
   border-radius: 50%;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.touxiang image{
+  width: 160rpx;
+  height: 160rpx
 }
 
 .liebiao {

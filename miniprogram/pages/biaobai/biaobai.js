@@ -23,13 +23,14 @@ Page({
       },
     })
     db.collection('biaobai')
-      .orderBy('createTime', 'desc') //按发布视频排序
+      .orderBy('createTime', 'desc') //按发布时间排序
       .get({
         success(res) {
           console.log("请求成功", res.data[0].info)
           that.setData({
             dataList: res.data
           })
+          console.log(that.data.dataList[0])
         },
         fail(res) {
           console.log("请求失败", res)
@@ -57,8 +58,27 @@ Page({
   },
   //打开弹窗
   send: function() {
-    this.setData({
-      isSend: true
+    var that = this
+    wx.getStorage({
+      key: 'login',
+      success: function(res) {
+        if (res.data) {
+          that.setData({
+            isSend: true
+          })
+        } else {
+          wx.showToast({
+            icon: "none",
+            title: '你还未登录'
+          })
+        }
+      },
+      fail:function(res){
+        wx.showToast({
+          icon: "none",
+          title: '你还未登录'
+        })
+      }
     })
   },
   // 关闭弹窗
@@ -72,6 +92,8 @@ Page({
     let writer = this.data.writer
     let to = this.data.to
     let info = this.data.info
+    var likeNumber = 1
+    console.log(likeNumber)
     if (!to) {
       wx.showToast({
         icon: "none",
@@ -86,7 +108,7 @@ Page({
       })
       return
     }
-    if (!info || info < 6) {
+    if (!info || info.length < 6) {
       wx.showToast({
         icon: "none",
         title: '内容要多于六个字'
@@ -96,9 +118,9 @@ Page({
     wx.showLoading({
       title: '发布中...',
     })
-    db.collection('biaobai').add({
+    wx.cloud.callFunction({
+      name: 'love',
       data: {
-        fileIDs: this.data.fileIDs,
         createTime: db.serverDate(),
         info: this.data.info,
         to: this.data.to,
@@ -115,6 +137,11 @@ Page({
           isSend: false
         })
         this.onLoad()
+        this.setData({
+          to: null,
+          writer: null,
+          info: null
+        })
       },
       fail: err => {
         wx.hideLoading()
@@ -125,6 +152,34 @@ Page({
         console.error('发布失败', err)
       }
     })
+    // db.collection('biaobai').add({
+    //   data: {
+    //     createTime: db.serverDate(),
+    //     info: this.data.info,
+    //     to: this.data.to,
+    //     writer: this.data.writer,
+    //     sendTime: util.formatTime(new Date())
+    //   },
+    //   success: res => {
+    //     wx.hideLoading()
+    //     wx.showToast({
+    //       title: '发布成功',
+    //     })
+    //     console.log('发布成功', res)
+    //     this.setData({
+    //       isSend: false
+    //     })
+    //     this.onLoad()
+    //   },
+    //   fail: err => {
+    //     wx.hideLoading()
+    //     wx.showToast({
+    //       icon: 'none',
+    //       title: '网络不给力....'
+    //     })
+    //     console.error('发布失败', err)
+    //   }
+    // })
 
   },
   delete: function(e) {
@@ -134,7 +189,7 @@ Page({
       success: function(res) {
         console.log(res.data)
         wx.showToast({
-          icon:'success',
+          icon: 'success',
           title: '删除成功',
         })
       }

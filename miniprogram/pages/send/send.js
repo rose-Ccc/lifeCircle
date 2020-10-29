@@ -114,13 +114,13 @@ Page({
   //发布按钮
   fb: function(e) {
     if (this.data.type == 'lostlost') {
-      var data = 'lost'
+      var room = 'lost'
     } else if (this.data.type == 'lostfound') {
-      var data = 'found'
+      var room = 'found'
     } else {
-      var data = 'xianzhi'
+      var room = 'xianzhi'
     }
-    console.log(data)
+    console.log(room)
     if (!this.data.imgbox.length) {
       wx.showToast({
         icon: 'none',
@@ -136,34 +136,64 @@ Page({
         promiseArr.push(new Promise((reslove, reject) => {
           let item = this.data.imgbox[i];
           let suffix = /\.\w+$/.exec(item)[0]; //正则表达式返回文件的扩展名
-          wx.cloud.uploadFile({
-            cloudPath: new Date().getTime() + suffix, // 上传至云端的路径
-            filePath: item, // 小程序临时文件路径
-            success: res => {
-              this.setData({
-                fileIDs: this.data.fileIDs.concat(res.fileID)
+          // wx.cloud.uploadFile({
+          //   cloudPath: new Date().getTime() + suffix, // 上传至云端的路径
+          //   filePath: item, // 小程序临时文件路径
+          //   success: res => {
+          //     this.setData({
+          //       fileIDs: this.data.fileIDs.concat(res.fileID)
+          //     });
+          //     console.log(res.fileID) //输出上传后图片的返回地址
+          //     reslove();
+          //     wx.hideLoading();
+          //     wx.showToast({
+          //       title: "上传成功",
+          //     })
+          //   },
+          //   fail: res => {
+          //     wx.hideLoading();
+          //     wx.showToast({
+          //       icon: 'none',
+          //       title: "上传失败",
+          //     })
+          //   }
+
+          // })
+          var that = this
+          const fileContent = wx.getFileSystemManager().readFileSync(item, 'base64');
+          wx.cloud.callFunction({
+            name: 'img',
+            data: {
+              fileContent: fileContent,
+              cloudPath: new Date().getTime() + suffix
+            },
+            success: function(res) {
+              that.setData({
+                fileIDs: that.data.fileIDs.concat(res.result.fileID)
               });
-              console.log(res.fileID) //输出上传后图片的返回地址
+              console.log(res.result.fileID) //输出上传后图片的返回地址
               reslove();
-              wx.hideLoading();
+              // wx.hideLoading();
               wx.showToast({
                 title: "上传成功",
               })
             },
-            fail: res => {
-              wx.hideLoading();
+            fail: function(res) {
+              console.log(res)
+              // wx.hideLoading();
               wx.showToast({
                 icon: 'none',
                 title: "上传失败",
               })
             }
-
           })
         }));
       }
       Promise.all(promiseArr).then(res => { //等数组都做完后做then方法
-        wx.cloud.database().collection(data).add({
+        wx.cloud.callFunction({
+          name: 'send',
           data: {
+            room,
             fileIDs: this.data.fileIDs,
             createTime: db.serverDate(),
             sendTime: util.formatTime(new Date()),
@@ -178,17 +208,16 @@ Page({
             userName: this.data.user.nickName
           },
           success: res => {
-            wx.hideLoading()
+            // wx.hideLoading()
             wx.showToast({
               title: '发布成功',
             })
             console.log('发布成功', res)
             wx.navigateBack({
-
             })
           },
           fail: err => {
-            wx.hideLoading()
+            // wx.hideLoading()
             wx.showToast({
               icon: 'none',
               title: '网络不给力....'
@@ -196,6 +225,40 @@ Page({
             console.error('发布失败', err)
           }
         })
+        // wx.cloud.database().collection(data).add({
+        //   data: {
+        //     fileIDs: this.data.fileIDs,
+        //     createTime: db.serverDate(),
+        //     sendTime: util.formatTime(new Date()),
+        //     pName: this.data.pName,
+        //     pCall: this.data.pCall,
+        //     pWechat: this.data.pWechat,
+        //     name: this.data.name,
+        //     price: this.data.price,
+        //     info: this.data.info,
+        //     images: this.data.imgbox,
+        //     touxiang: this.data.user.avatarUrl,
+        //     userName: this.data.user.nickName
+        //   },
+        //   success: res => {
+        //     wx.hideLoading()
+        //     wx.showToast({
+        //       title: '发布成功',
+        //     })
+        //     console.log('发布成功', res)
+        //     wx.navigateBack({
+
+        //     })
+        //   },
+        //   fail: err => {
+        //     wx.hideLoading()
+        //     wx.showToast({
+        //       icon: 'none',
+        //       title: '网络不给力....'
+        //     })
+        //     console.error('发布失败', err)
+        //   }
+        // })
       })
 
     }

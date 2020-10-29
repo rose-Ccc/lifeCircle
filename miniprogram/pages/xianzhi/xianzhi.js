@@ -50,8 +50,26 @@ Page({
     this.onLoad()
   },
   send: function() {
-    wx.navigateTo({
-      url: '../send/send?name=xianzhi',
+    wx.getStorage({
+      key: 'login',
+      success: function (res) {
+        if (res.data) {
+          wx.navigateTo({
+            url: '../send/send?name=xianzhi',
+          })
+        } else {
+          wx.showToast({
+            icon: "none",
+            title: '你还未登录'
+          })
+        }
+      },
+      fail: function (res) {
+        wx.showToast({
+          icon: "none",
+          title: '你还未登录'
+        })
+      }
     })
   },
   go: function(event) {

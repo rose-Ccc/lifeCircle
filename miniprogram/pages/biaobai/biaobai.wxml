@@ -1,8 +1,10 @@
 <view class="all">
   <block wx:for="{{dataList}}" wx:key="index">
     <view class="box">
-      <view>
-        <text class="title">To:</text>{{item.to}}
+      <view class="box_bottom">
+        <view>
+          <text class="title">To:</text>{{item.to}}
+        </view>
       </view>
       <view class="info">
         <text>{{item.info}}</text>

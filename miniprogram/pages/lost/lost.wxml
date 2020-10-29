@@ -61,8 +61,8 @@
               <text>{{item.info}}</text>
             </view>
             <scroll-view scroll-x="true" class="img_box">
-              <block wx:key="index" wx:for="{{item.fileIDs}}">
-                <image class='img' src='{{item}}' mode='aspectFill' data-img='{{item}}' data-imgA='{{item.fileIDs}}' bindtap="previewImg"></image>
+              <block wx:key="index" wx:for="{{item.fileIDs}}" wx:for-item="itemImg">
+                <image class='img' src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
               </block>
             </scroll-view>
             <view class="box_bottom" wx:if="{{openid==item._openid}}">
@@ -78,11 +78,11 @@
 </view>
 <image class="send" src="../../images/biaobai/send.png" bindtap="send"></image>
 <block wx:if="{{isSend}}">
-  <view class="show_send">
-    <view class="bg" bindtap="back"></view>
+  <view class="show_send"  bindtap="back">
+    <view class="bg"></view>
     <view class="show_button">
-      <button bindtap="send_lost">Lost</button>
-      <button bindtap="send_found">Found</button>
+      <button catchtap="send_lost">Lost</button>
+      <button catchtap="send_found">Found</button>
     </view>
   </view>
 </block>

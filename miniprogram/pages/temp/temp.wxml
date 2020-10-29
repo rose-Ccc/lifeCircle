@@ -7,13 +7,13 @@
       <view class="text" style="color:red">{{item.daiyu}}</view>
     </view>
     <view class="line"></view>
-    <view class="text">工作内容:
+    <view class="text" wx:if="{{item.neirong}}">工作内容:
       <text>\n{{item.neirong}}</text>
     </view>
-    <view class="text">工作时间：
+    <view class="text" wx:if="{{item.shijian}}">工作时间：
       <text>\n{{item.shijian}}</text>
     </view>
-    <view class="text">应聘对象：
+    <view class="text" wx:if="{{item.yaoqiu}}">应聘要求：
       <text>\n{{item.yaoqiu}}</text>
     </view>
     <view class="text" style="text-align:right;margin-top:15rpx;">发布者:{{item.writer}}</view>

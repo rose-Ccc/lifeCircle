@@ -38,11 +38,11 @@ Page({
     })
     this.onLoad()
   },
-  delete1: function (e) {
+  delete1: function(e) {
     var info = e.currentTarget.dataset.t
     console.log(info)
     db.collection('found').doc(info._id).remove({
-      success: function (res) {
+      success: function(res) {
         console.log(res.data)
         wx.showToast({
           icon: 'success',
@@ -100,7 +100,7 @@ Page({
   getLost: function() {
     var that = this
     db.collection('lost')
-      .orderBy('createTime', 'desc') //按发布视频排序
+      .orderBy('createTime', 'desc') //按发布时间排序
       .get({
         success(res) {
           that.setData({
@@ -129,8 +129,27 @@ Page({
   },
   //打开分类按钮
   send: function() {
-    this.setData({
-      isSend: true
+    var that = this
+    wx.getStorage({
+      key: 'login',
+      success: function(res) {
+        if (res.data) {
+          that.setData({
+            isSend: true
+          })
+        } else {
+          wx.showToast({
+            icon: "none",
+            title: '你还未登录'
+          })
+        }
+      },
+      fail: function (res) {
+        wx.showToast({
+          icon: "none",
+          title: '你还未登录'
+        })
+      }
     })
   },
   //退出分类按钮
