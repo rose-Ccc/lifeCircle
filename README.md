@@ -7,18 +7,18 @@
 
 ## 程序截图
 ### 首页
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.png" width = "108px" height = "234px" align=“center”></img>
 ### 我的
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/mine.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/mine.png" width = "108px" height = "234px" align=“center”></img>
 ### 表白墙
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/love.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/love.png" width = "108px" height = "234px" align=“center”></img>
 ### 失物招领
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/lost.png)
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/lostSend.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/lost.png" width = "108px" height = "234px" align=“center”></img>
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/lostSend.png" width = "108px" height = "234px" align=“center”></img>
 ### 兼职
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/work.png)
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/workDetail.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/work.png" width = "108px" height = "234px" align=“center”></img>
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/workDetail.png" width = "108px" height = "234px" align=“center”></img>
 ### 闲置
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buy.png)
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buyDetail.png)
-![](http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buySend.png)
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buy.png" width = "108px" height = "234px" align=“center” />
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buySend.png" width = "108px" height = "234px" align=“center” />
+<img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/buyDetail.png" width = "108px" height = "234px" align=“center” />
