@@ -5,7 +5,8 @@ const db = cloud.database()
 
 
 // 云函数入口函数
-exports.main = async(event, context) => {
+exports.main = async (event, context) => {
+  console.log(event)
   const wxContext = cloud.getWXContext()
   try {
     return await db.collection("biaobai").add({

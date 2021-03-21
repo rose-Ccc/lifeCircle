@@ -195,7 +195,7 @@ Page({
           data: {
             room,
             fileIDs: this.data.fileIDs,
-            createTime: db.serverDate(),
+            createTime: new Date(),
             sendTime: util.formatTime(new Date()),
             pName: this.data.pName,
             pCall: this.data.pCall,
@@ -228,7 +228,7 @@ Page({
         // wx.cloud.database().collection(data).add({
         //   data: {
         //     fileIDs: this.data.fileIDs,
-        //     createTime: db.serverDate(),
+        //     createTime: new Date(),
         //     sendTime: util.formatTime(new Date()),
         //     pName: this.data.pName,
         //     pCall: this.data.pCall,

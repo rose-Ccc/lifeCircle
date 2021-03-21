@@ -6,7 +6,8 @@ App({
    */
   onLaunch: function () {
     wx.cloud.init({
-      env:'cloud-nbiot'
+      env:'cloud-nbiot',
+      traceUser: true
     })
   },
 
