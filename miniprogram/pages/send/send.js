@@ -195,7 +195,6 @@ Page({
           data: {
             room,
             fileIDs: this.data.fileIDs,
-            createTime: new Date(),
             sendTime: util.formatTime(new Date()),
             pName: this.data.pName,
             pCall: this.data.pCall,

@@ -12,7 +12,7 @@ exports.main = async(event, context) => {
       data: {
         _openid: wxContext.OPENID,
         fileIDs: event.fileIDs,
-        createTime: event.createTime,
+        createTime: db.serverDate(),
         sendTime: event.sendTime,
         pName: event.pName,
         pCall: event.pCall,
