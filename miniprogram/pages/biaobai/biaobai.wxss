@@ -1,5 +1,6 @@
 page {
-  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585049051903&di=9c81bae13c884ad107613babdf694965&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201607%2F18%2F20160718220600_jkSwK.jpeg');
+  background-image: url('http://rose-ccc.gitee.io/imgbed/background/3.jpg');
+  background-size: 100vw 100vh;
   width: 100vw;
   height: 100vh;
   background-attachment: fixed; /*设置背景图片静止 */
@@ -15,10 +16,15 @@ page {
 .box {
   border-radius: 20rpx;
   margin-top: 30rpx;
-  background-color: rgba(0, 168, 243, 0.2);
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(0, 168, 243, 0.2); */
   width: 84vw;
   padding: 3vw;
   box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.box:last-of-type{
+  margin-bottom: 30rpx;
 }
 
 .info {

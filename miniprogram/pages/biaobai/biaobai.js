@@ -121,7 +121,6 @@ Page({
     wx.cloud.callFunction({
       name: 'love',
       data: {
-        createTime: new Date(),
         info: this.data.info,
         to: this.data.to,
         writer: this.data.writer,

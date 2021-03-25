@@ -1,205 +1,223 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"enhance": true
-	},
-	"appid": "wxa57b6dd09e867026",
-	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1",
-	"libVersion": "2.15.0",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"compileType": "miniprogram",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "pages/work/work",
-					"pathName": "pages/work/work",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/xianzhi/xianzhi",
-					"pathName": "pages/xianzhi/xianzhi",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/biaobai/biaobai",
-					"pathName": "pages/biaobai/biaobai",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/temp/temp",
-					"pathName": "pages/temp/temp",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/work/work",
-					"pathName": "pages/work/work",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/lost/lost",
-					"pathName": "pages/lost/lost",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/xianzhi/xianzhi",
-					"pathName": "pages/xianzhi/xianzhi",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/xianzhi_send/xianzhi_send",
-					"pathName": "pages/xianzhi_send/xianzhi_send",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/lost/lost",
-					"pathName": "pages/lost/lost",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/lost/lost",
-					"pathName": "pages/lost/lost",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/xianzhi_send/xianzhi_send",
-					"pathName": "pages/xianzhi_send/xianzhi_send",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/lost/lost",
-					"pathName": "pages/lost/lost",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/send/send",
-					"pathName": "pages/send/send",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/temp/temp",
-					"pathName": "pages/temp/temp",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/send/send",
-					"pathName": "pages/send/send",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/biaobai/biaobai",
-					"pathName": "pages/biaobai/biaobai",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/biaobai/biaobai",
-					"pathName": "pages/biaobai/biaobai",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				}
-			]
-		}
-	}
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "useApiHostProcess": false
+  },
+  "appid": "wxa57b6dd09e867026",
+  "projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1",
+  "libVersion": "2.15.0",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/work/work",
+          "pathName": "pages/work/work",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/xianzhi/xianzhi",
+          "pathName": "pages/xianzhi/xianzhi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/biaobai/biaobai",
+          "pathName": "pages/biaobai/biaobai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/temp/temp",
+          "pathName": "pages/temp/temp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/work/work",
+          "pathName": "pages/work/work",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lost/lost",
+          "pathName": "pages/lost/lost",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/xianzhi/xianzhi",
+          "pathName": "pages/xianzhi/xianzhi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/xianzhi_send/xianzhi_send",
+          "pathName": "pages/xianzhi_send/xianzhi_send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lost/lost",
+          "pathName": "pages/lost/lost",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lost/lost",
+          "pathName": "pages/lost/lost",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/xianzhi_send/xianzhi_send",
+          "pathName": "pages/xianzhi_send/xianzhi_send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lost/lost",
+          "pathName": "pages/lost/lost",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/send/send",
+          "pathName": "pages/send/send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/temp/temp",
+          "pathName": "pages/temp/temp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/send/send",
+          "pathName": "pages/send/send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/biaobai/biaobai",
+          "pathName": "pages/biaobai/biaobai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/biaobai/biaobai",
+          "pathName": "pages/biaobai/biaobai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

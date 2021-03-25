@@ -12,7 +12,7 @@ exports.main = async (event, context) => {
     return await db.collection("biaobai").add({
       data: {
         _openid: wxContext.OPENID,
-        createTime: event.createTime,
+        createTime: db.serverDate(),
         info: event.info,
         to: event.to,
         writer: event.writer,
