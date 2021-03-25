@@ -16,6 +16,10 @@ wx.cloud.init({
 3. 创建对应的五个数据库集合（biaobai、found、lost、xianzhi、jianzhi）
 4. 将 cloudfunctions 文件下的四个文件上传云函数部署（右键点击，选择第三个选项“上传并部署：云端安装环境”）
 
+## 如果对您有用，欢迎支持作者，谢谢
+<img src="http://rose-ccc.gitee.io/imgbed/pay/alipay.png" width = "150px" align=“center”></img>
+<img src="http://rose-ccc.gitee.io/imgbed/pay/wechatpay.png" width = "150px" align=“center”></img>
+
 ## 程序截图
 ### 首页
 <img src="http://rose-ccc.gitee.io/imgbed/%E6%A0%A1%E5%9B%AD%E7%94%9F%E6%B4%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.png" width = "108px" height = "234px" align=“center”></img>
